@@ -2,3 +2,21 @@
     margin: 0;
     padding: 0;
 }
+#container-principal {
+    text-align: center;
+    min-width: 480px;
+    max-width: 1200px;
+    margin: auto;    
+}
+h1 {
+    text-align: center;    
+}
+h2 {
+    margin: 15px;
+}
+#logo {
+    color: cornflowerblue;
+}
+hr {
+    margin-bottom: 15px;
+}
