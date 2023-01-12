@@ -29,3 +29,11 @@ h2 {
 hr {
     margin-bottom: 15px;
 }
+input[type=button] {
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+    border: none;
+    margin: 10px 10px;
+    border-radius: 3px;
+}
