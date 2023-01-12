@@ -12,6 +12,8 @@ header h1 {
     text-align: center;
     margin: auto;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.250);
+    color: white;
+    text-shadow: black 1px 0 10px;
 }
 #container-principal {
     text-align: center;
@@ -37,3 +39,12 @@ input[type=button] {
     margin: 10px 10px;
     border-radius: 3px;
 }
+#tbProdutos {
+    margin: auto;
+    
+}
+table tr td {
+    width: 140px;
+    border: 1px solid black;
+}
+

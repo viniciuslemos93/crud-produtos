@@ -14,12 +14,32 @@
     </header>
     <main id="container-principal">        
         <h2>Cadastrar Novo Produto</h2>
-        Nome: <input type="text">
-        Categoria: <input type="text">
-        Preço: <input type="text">        
-        <input type="button" value="Cadastrar">
-        
+        <!--
+        Nome <input type="text" name="txtNome">
+        Categoria: <input type="text" name="txtCategoria">
+        Preço: <input type="text" name="txtPreco">
+        <input type="button" value="Cadastrar" onclick="cadastarProduto(txtNome.value, txtCategoria.value, txtPreco.value)">
+        -->
+
+        <label>Nome</label>
+        <input type="text" name="txtNome" />
+        <label>Categoria</label>
+        <input type="text" name="txtCategoria" />
+        <label>Preço</label>
+        <input type="text" name="txtPreco" />
+
+        <input type="button" value="Cadastrar" onclick="cadastarProduto(txtNome.value, txtCategoria.value, txtPreco.value)"/>
+
         <h2>Produtos Cadastrados</h2>
+        <table id="tbProdutos">
+            <thead>
+                <tr>
+                    <td>Nome</td>
+                    <td>Categoria</td>
+                    <td>Preço</td>
+                </tr>
+            </thead>
+        </table>
 
     </main>
 </body>
