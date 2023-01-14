@@ -14,33 +14,42 @@
     </header>
     <main id="container-principal">        
         <h2>Cadastrar Novo Produto</h2>
-        <!--
-        Nome <input type="text" name="txtNome">
-        Categoria: <input type="text" name="txtCategoria">
-        Preço: <input type="text" name="txtPreco">
-        <input type="button" value="Cadastrar" onclick="cadastarProduto(txtNome.value, txtCategoria.value, txtPreco.value)">
-        -->
 
-        <label>Nome</label>
-        <input type="text" name="txtNome" />
-        <label>Categoria</label>
-        <input type="text" name="txtCategoria" />
-        <label>Preço</label>
-        <input type="text" name="txtPreco" />
-
-        <input type="button" value="Cadastrar" onclick="cadastarProduto(txtNome.value, txtCategoria.value, txtPreco.value)"/>
+        
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" required />
+    
+            <label for="categoria">Categoria</label>
+            <input id="categoria" type="text" required />
+    
+            <label for="preco">Preço</label>
+            <input id="preco" type="number" required />
+            <button id="btnSalvar" onclick="cadastrar()">Salvar</button>
+        
 
         <h2>Produtos Cadastrados</h2>
+        <div id="container-produtos">
+            
+        </div>
+        
+        <div id="container-produtos" class="bloco">
+        
+        </div>
+        
         <table id="tbProdutos">
             <thead>
                 <tr>
-                    <td>Nome</td>
-                    <td>Categoria</td>
-                    <td>Preço</td>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Preço</th>
+                    
+                    <tbody>
+                    
+                    </tbody>
                 </tr>
             </thead>
         </table>
-
+        
     </main>
 </body>
 </html>

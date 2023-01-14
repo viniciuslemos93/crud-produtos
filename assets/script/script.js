@@ -1,15 +1,23 @@
-function cadastarProduto(nome, categoria, preco) {
-    var tb = document.getElementById("tbProdutos")
-    var qtdLinhas = tb.rows.length
-    var linha = tb.insertRow(qtdLinhas)
+addEventListener
 
-    var cellCodigo = linha.insertCell(0)
-    var cellNome = linha.insertCell(1)
-    var cellCategoria = linha.insertCell(2)
-    var cellPreco = linha.insertCell(3)
+function cadastrar () {
+    const nome = document.getElementById('nome')
+    const categoria = document.getElementById('categoria')
+    const preco = document.getElementById('preco')
 
-    cellCodigo.innerHTML = qtdLinhas
-    cellNome.innerHTML = nome
-    cellCategoria.innerHTML = categoria
-    cellPreco.innerHTML = preco
+    const addProduto = nome.value
+    const addCategoria = categoria.value
+    const addPreco = preco.value
+
+    const produtos = document.getElementById('tbProdutos')
+
+    const cadaProduto = `
+    
+    <td>${addProduto}</td>
+    <td>${addCategoria}</td>
+    <td>${addPreco}</td>   
+    
+    `
+    produtos.insertAdjacentHTML('beforeend', cadaProduto);
+    
 }

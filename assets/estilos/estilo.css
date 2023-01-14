@@ -31,20 +31,20 @@ h2 {
 hr {
     margin-bottom: 15px;
 }
-input[type=button] {
+#btnSalvar {
     cursor: pointer;
     background-color: brown;
     color: white;
     border: none;
     margin: 10px 10px;
     border-radius: 3px;
+    padding: 5px;
 }
 #tbProdutos {
     margin: auto;
     
 }
-table tr td {
+table tr th, td {
     width: 140px;
     border: 1px solid black;
 }
-
