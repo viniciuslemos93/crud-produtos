@@ -6,50 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/estilos/estilo.css">
     <script src="assets/script/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&family=Sono:wght@200&family=Staatliches&family=Wellfleet&display=swap" rel="stylesheet">
     <title>LemosTech - Gerenciamento de Produtos</title>
 </head>
 <body>
     <header>
-        <h1>Lemos<span id="logo">Tech</span> - Gerenciamento de Produtos</h1>
+        <h1>Lemos<span>Tech</span> Gerenciamento de Produtos</h1>
     </header>
-    <main id="container-principal">        
-        <h2>Cadastrar Novo Produto</h2>
-
-        
-            <label for="nome">Nome</label>
-            <input id="nome" type="text" required />
     
-            <label for="categoria">Categoria</label>
-            <input id="categoria" type="text" required />
-    
-            <label for="preco">Preço</label>
-            <input id="preco" type="number" required />
-            <button id="btnSalvar" onclick="cadastrar()">Salvar</button>
-        
-
-        <h2>Produtos Cadastrados</h2>
-        <div id="container-produtos">
-            
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja.</span>
         </div>
-        
-        <div id="container-produtos" class="bloco">
-        
+        <div class="card">
+            <div class="lineInput">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="Nome do produto...">
+            </div>
+            <div class="lineInput">
+                <label>Valor</label>
+                <input type="text" id="valor" placeholder="Valor do produto...">
+            </div>
+            <div></div>
+            <button onclick="produto.adicionar()">Adicionar</button>
+            <button onclick="produto.excluir()">Excluir</button>
         </div>
-        
-        <table id="tbProdutos">
-            <thead>
-                <tr>
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
                     <th>Nome</th>
-                    <th>Categoria</th>
-                    <th>Preço</th>
-                    
-                    <tbody>
-                    
-                    </tbody>
-                </tr>
-            </thead>
-        </table>
-        
+                    <th>Valor</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mesa</td>
+                        <td>25.00</td>
+                        <td class="center">
+                            <img src="assets/img/delete.png" alt="ícone de deletar">
+                            <img src="assets/img/edit.png" alt="ícone de editar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mesa</td>
+                        <td>25.00</td>
+                        <td class="center">
+                            <img src="assets/img/delete.png" alt="ícone de deletar">
+                            <img src="assets/img/edit.png" alt="ícone de editar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mesa</td>
+                        <td>25.00</td>
+                        <td class="center">
+                            <img src="assets/img/delete.png" alt="ícone de deletar">
+                            <img src="assets/img/edit.png" alt="ícone de editar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mesa</td>
+                        <td>25.00</td>
+                        <td class="center">
+                            <img src="assets/img/delete.png" alt="ícone de deletar">
+                            <img src="assets/img/edit.png" alt="ícone de editar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 </body>
 </html>
