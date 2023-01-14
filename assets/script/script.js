@@ -28,7 +28,7 @@ class Produto {
             let td_id = tr.insertCell()
             let td_produto = tr.insertCell()
             let td_preco = tr.insertCell()
-            let acoes = tr.insertCell()
+            let td_acoes = tr.insertCell()
 
             td_id.innerText = this.arrayProdutos[i].id
             td_produto.innerText = this.arrayProdutos[i].nomeProduto
@@ -37,7 +37,7 @@ class Produto {
             td_id.classList.toggle('center');
 
             let imgEdit = document.createElement('img')
-            imgEdit.src = '../img/edit.png'
+            imgEdit.src = 'assets/img/edit.png';
 
             td_acoes.appendChild(imgEdit);
         }
