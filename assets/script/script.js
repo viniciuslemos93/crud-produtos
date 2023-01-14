@@ -89,9 +89,8 @@ class Produto {
 
     }
     deletar(id) {
-        let tbody = document.getElementById('tbody')
-
-
+        if (confirm (`Deseja realmente Deletar o produto do ID ${id}`)) {
+            let tbody = document.getElementById('tbody')
         for (let i = 0; i < this.arrayProdutos.length; i++) {
             /*Validando se ID do nosso array for igual ao ID que recebemos no parâmetro
             então deletar o objeto do array, usando o método splice, que passamos dois parâmetros, onde
@@ -103,6 +102,7 @@ class Produto {
                 tbody.deleteRow(i)
                 console.log(this.arrayProdutos)                
             }
+        }
         }
     }
 }
