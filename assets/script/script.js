@@ -1,23 +1,17 @@
-addEventListener
+class Produto {
+    constructor() {
+        this.id = 0;
+        this.nomeProduto = '';
+        this.valor = 0;
+    }
 
-function cadastrar () {
-    const nome = document.getElementById('nome')
-    const categoria = document.getElementById('categoria')
-    const preco = document.getElementById('preco')
+    adicionar() {
+        alert("Adicionar vou acionado!")
+    }
 
-    const addProduto = nome.value
-    const addCategoria = categoria.value
-    const addPreco = preco.value
-
-    const produtos = document.getElementById('tbProdutos')
-
-    const cadaProduto = `
-    
-    <td>${addProduto}</td>
-    <td>${addCategoria}</td>
-    <td>${addPreco}</td>   
-    
-    `
-    produtos.insertAdjacentHTML('beforeend', cadaProduto);
-    
+    excluir() {
+        alert("ítem deletado!")
+    }
 }
+//Criando um objeto do tipo Produto e atribuindo a variável produto.
+var produto = new Produto()
