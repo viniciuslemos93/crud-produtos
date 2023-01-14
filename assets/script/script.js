@@ -12,6 +12,7 @@ class Produto {
 
         }
         this.listaTabela()
+        this.cancelar()
     }
     adicionar(produto) {
         //a função push irá adicionar os campos dentro do array
@@ -39,7 +40,20 @@ class Produto {
             let imgEdit = document.createElement('img')
             imgEdit.src = 'assets/img/edit.png';
 
+            let imgDelete = document.createElement('img')
+            imgDelete.src = 'assets/img/delete.png';
+            /*O setAttribute é uma função que recebe dois parâmetros, o primeiro é o evento que
+            vc quer disparar, e o segundo é a função que será chamada.
+            Neste caso colocamos o evento de click nas imagens de alterar e deletar, chamando
+            suas respectivas funções
+            Obs, ao chamar a função, precisamos saber qual linha vamos deletar ou alterar, para isso
+            vamosconcatenar com o arrayProdutos na posição [i] que já temos.
+            */
+
+            imgDelete.setAttribute("onclick", "produto.deletar("+ this.arrayProdutos[i].id +")")
+
             td_acoes.appendChild(imgEdit);
+            td_acoes.appendChild(imgDelete);
         }
     }
 
@@ -70,7 +84,26 @@ class Produto {
     }
 
     cancelar() {
-        
+        document.getElementById('produto').value = ''
+        document.getElementById('preco').value = ''
+
+    }
+    deletar(id) {
+        let tbody = document.getElementById('tbody')
+
+
+        for (let i = 0; i < this.arrayProdutos.length; i++) {
+            /*Validando se ID do nosso array for igual ao ID que recebemos no parâmetro
+            então deletar o objeto do array, usando o método splice, que passamos dois parâmetros, onde
+            o primeiro é o índice que vamos deletar e o segundo é quantos registros vc quer deletar,
+            no nosso caso apenas 1.
+            */
+            if (this.arrayProdutos[i].id == id) {
+                this.arrayProdutos.splice(i, 1)
+                tbody.deleteRow(i)
+                console.log(this.arrayProdutos)                
+            }
+        }
     }
 }
 //Criando um objeto do tipo Produto e atribuindo a variável produto.
