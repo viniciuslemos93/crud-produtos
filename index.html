@@ -27,58 +27,23 @@
                 <input type="text" id="produto" placeholder="Nome do produto...">
             </div>
             <div class="lineInput">
-                <label>Valor</label>
-                <input type="text" id="valor" placeholder="Valor do produto...">
+                <label>Preço</label>
+                <input type="text" id="preco" placeholder="Valor do produto...">
             </div>
             <div></div>
-            <button onclick="produto.adicionar()">Adicionar</button>
-            <button onclick="produto.excluir()">Excluir</button>
+            <button onclick="produto.salvar()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
         </div>
         <div class="content">
             <table border="1">
                 <thead>
                     <th class="center">ID</th>
                     <th>Nome</th>
-                    <th>Valor</th>
+                    <th>Preço</th>
                     <th class="center">Ações</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mesa</td>
-                        <td>25.00</td>
-                        <td class="center">
-                            <img src="assets/img/delete.png" alt="ícone de deletar">
-                            <img src="assets/img/edit.png" alt="ícone de editar">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Mesa</td>
-                        <td>25.00</td>
-                        <td class="center">
-                            <img src="assets/img/delete.png" alt="ícone de deletar">
-                            <img src="assets/img/edit.png" alt="ícone de editar">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Mesa</td>
-                        <td>25.00</td>
-                        <td class="center">
-                            <img src="assets/img/delete.png" alt="ícone de deletar">
-                            <img src="assets/img/edit.png" alt="ícone de editar">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Mesa</td>
-                        <td>25.00</td>
-                        <td class="center">
-                            <img src="assets/img/delete.png" alt="ícone de deletar">
-                            <img src="assets/img/edit.png" alt="ícone de editar">
-                        </td>
-                    </tr>
+                <tbody id="tbody">
+                
                 </tbody>
             </table>
         </div>
