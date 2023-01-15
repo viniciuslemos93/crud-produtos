@@ -16,10 +16,10 @@ Projeto de estudo prático para criação de uma aplicação que adiciona, alter
 <hr>
 <h3> Projeto iniciado no dia 09/01/2023 e finalizado no dia 15/01/2023. </h3>
 <hr>
-Deploy: 
+<h3> Deploy: https://viniciuslemos93.github.io/crud-produtos/ <h3>
 <h1 align="center">Gif do Resultado</h1>
 <div align="center">
-<img align="center" alt="Design do site" height="400" width="500" src="./imagens/gif-projeto.gif">
+<img align="center" alt="Design do site" height="400" width="500" src="gif-projeto.gif">
 
 </div>
 <h2 align="center">Tecnologias Usadas</h2>
