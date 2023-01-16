@@ -8,10 +8,13 @@
 </p>
 
 Projeto de estudo prático para criação de uma aplicação que adiciona, altera e deleta produtos, desenvolvido em HTML, CSS e JS puro.
+Neste projeto pude praticar os conceitos de Orientação a Objetos, deixando a aplicação com uma maior escalabilidade, focando e deixar as funções específicas para cada tarefa exclusiva.
+
 <hr>
 
+- Cadastrar, alterar e deletar dados da tabela
 - Utilizando conceiros de Orientação a Objetos
-- Manipulando Arrays
+- Manipulação de Arrays
 
 <hr>
 <h3> Projeto iniciado no dia 09/01/2023 e finalizado no dia 15/01/2023. </h3>
