@@ -26,10 +26,13 @@
 </p>
 <p>Neste projeto pude praticar os conceitos de Orientação a Objetos, deixando a aplicação com uma maior escalabilidade, focando e deixar as funções específicas para cada tarefa exclusiva</p>
 
-<h1 align="center">Gif do Resultado</h1>
+<h1 align="center">Resultado</h1>
 <div align="center">
-<img align="center" alt="Design do site" height="400" width="500" src="gif-projeto.gif">
+<img align="center" alt="Design do site" width="500" src="gif-projeto.gif">
+</div>
 
+<div align="center">
+<img align="center" alt="Design do site" width="500" src="print.png">
 </div>
 
 ### Deploy: https://viniciuslemos93.github.io/crud-produtos/
@@ -43,8 +46,6 @@
 
 * [JavaScript](https://www.javascript.com/)
 
-* [Bootstrap](https://getbootstrap.com/)
-
 &#xa0;
 
 ## :hammer_and_wrench: Serviços
@@ -57,8 +58,6 @@
 📌 Cadastrar, alterar e deletar dados da tabela de forma dinâmica;
 
 📌 Utilizando conceitos de Orientação a Objetos;
-
-📌 Responsividade com o Bootstrap;
 
 📌 Manipulação de Arrays;
 
