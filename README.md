@@ -32,7 +32,7 @@
 </div>
 
 <div align="center">
-<img align="center" alt="Design do site" width="500" src="print.png">
+<img align="center" alt="Design do site" width="500" src="print.PNG">
 </div>
 
 ### Deploy: https://viniciuslemos93.github.io/crud-produtos/
